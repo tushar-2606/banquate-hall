@@ -1,0 +1,21 @@
+Banquate hall:
+
+1.index.html - home
+
+2.book.html - book
+
+3. about.html - about hall
+
+4.service.html - service hall
+
+5. plan.html - plans
+
+6. avebility.html - hall avibility
+
+7.contact.html - contact us
+
+8.reviwe.html - user review
+
+9.gallary.html - photo gallery
+
+10.help.html - help/faq

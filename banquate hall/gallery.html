@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | The Marigold Manor</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ef;
+      color: #333;
+      padding: 0;
+    }
+
+  
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 10px 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ff9900;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 15px 30px;
+      font-size: 2.8rem;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .gallery {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 35px;
+      padding: 0 15px 50px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.01);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 20px 25px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    
+    .navbar a.active{
+      background-color: #e68a00;
+      color: black;
+      text-decoration: underline;
+    }
+
+    footer{
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin-top: 249px;
+      padding: 12px 34px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="include.html">Home</a></li>
+      <li><a href="about.html">About Hall</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="plan.html">Plans</a></li>
+      <li><a href="avebility.html">Availability</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="help.html">Help/FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Title -->
+  <h1>Gallery - The Marigold Manor</h1>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="decoration.png" alt="Decor Image">
+      <p>
+        Experience the charm of our bespoke decorations — from fresh florals to thematic lighting, every detail is handpicked to match your event's mood. The Marigold Manor's decor team ensures a stunning visual treat for you and your guests.
+      </p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="weddinghall.png" alt="Wedding Hall">
+      <p>
+        Our grand wedding hall is designed to accommodate both intimate and large gatherings. With ambient lighting, luxurious interiors, and flexible seating, it's the perfect setting for weddings, receptions, and ceremonies.
+      </p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="flowersetup.png" alt="Flower Setup">
+      <p>
+        From marigold garlands to rose arches, our flower setups are crafted by expert florists. Whether you're going for traditional charm or modern aesthetics, our floral decor elevates every occasion with natural beauty.
+      </p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="luxry.png" alt="Luxury Event">
+      <p>
+        Host high-end events in true luxury with our modern banquet layouts. Featuring plush couches, chandeliers, and rich textures, The Marigold Manor offers unmatched elegance for VIP events, anniversaries, or corporate evenings.
+      </p>
+    </div>
+  </div>
+  <footer>
+      <p>&copy; All right reserved by @The Marigold Manor </p>
+ </footer>
+</body>
+</html>

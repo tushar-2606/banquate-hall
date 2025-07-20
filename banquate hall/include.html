@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Banquet Hall</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+       background: url(background.png) no-repeat center center fixed; 
+       /* background-color: #ffc062a6; */
+      background-size: cover;
+      color: #fff;
+      z-index: -1;
+      opacity: 1;
+    }
+
+    /* Logo */
+    #logo {
+      text-align: left;
+      background-color: rgb(0 0 0 / 84%);
+    }
+
+    #logo img {
+      max-width: 60px;
+      height: auto;
+      border-radius: 10px;
+
+    }
+    /* Navbar */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 10px 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ff9900;
+      color: black;
+    }
+
+    .fram p {
+      display: flex;
+      justify-content: center;
+      color: #501802;
+      margin: 23px 45px;
+      font-size: 40px;
+
+    }
+
+    .fram h2 {
+      display: flex;
+      justify-content: center;
+      color: #ca4700;
+      font-size: 60px;
+      margin: 113px 45px;
+    }
+
+    .navbar a.active {
+      background-color: #e68a00;
+      color: black;
+      text-decoration: underline;
+    }
+
+    footer {
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin-top: 249px;
+      padding: 12px 34px;
+      font-size: 20px;
+    }
+     .fram {
+      background-color: rgba(219, 115, 17, 0.459);
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 1500px;
+      margin: 122px auto 50px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Logo -->
+  <div id="logo">
+    <img src="logo.png" alt="Banquet Logo">
+      <!-- <button class="btn"><a href="login.html">login</a></button>
+      <button class="btn">log out</button> -->
+  </div>
+
+  <!-- Nav bar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="include.html" class="active">Home</a></li>
+      <li><a href="about.html">About Hall</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="plan.html">Plans</a></li>
+      <li><a href="avebility.html">Availability</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="help.html">Help/FAQ</a></li>
+      <!-- <button class="btn"><a href="login.html">login</a></button>
+      <button class="btn">log out</button> -->
+    </ul>
+  </div>
+
+  <div class="fram">
+    <h2> Welcome to The Marigold Manor </h2>
+    <p>
+      Celebrate your moments with elegance, comfort, and style.
+    </p>
+    <p>
+      We offer perfect spaces for weddings, parties, and corporate events.
+    </p>
+  </div>
+  <footer>
+    <p>&copy; All right reserved by @The Marigold Manor </p>
+  </footer>
+</body>
+
+</html>

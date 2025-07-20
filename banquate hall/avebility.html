@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Availability | The Marigold Manor</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ef;
+      color: #333;
+      padding: 0;
+    }
+
+    /* === Navbar Styles === */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 10px 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ff9900;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 40px 20px 30px;
+      color: #d4af37;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-box {
+      max-width: 500px;
+      background-color: #fff;
+      padding: 30px 25px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 50px;
+    }
+
+    .form-box label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .form-box input,
+    .form-box select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .form-box input:focus,
+    .form-box select:focus {
+      border-color: #d4af37;
+      outline: none;
+    }
+
+    .form-box button {
+      width: 100%;
+      margin-top: 30px;
+      padding: 12px;
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-box button:hover {
+      background-color: #b9972e;
+    }
+
+
+     .navbar a.active{
+      background-color: #e68a00;
+      color: black;
+      text-decoration: underline;
+    }
+     footer{
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin-top: 249px;
+      padding: 12px 34px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="include.html">Home</a></li>
+      <li><a href="about.html">About Hall</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="plan.html">Plans</a></li>
+      <li><a href="avebility.html" class="active">Availability</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="help.html">Help/FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Title -->
+  <h1>Check Availability</h1>
+
+  <!-- Availability Form -->
+  <form action="help.php" class="form-box" method="post">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="hall">Select Hall Type:</label>
+    <select name="hall" id="hall" required>
+      <option value="">--Select--</option>
+      <option value="big">Big Hall</option>
+      <option value="medium">Medium Hall</option>
+      <option value="small">Small Hall</option>
+    </select>
+
+    <label for="event">Select Event Type:</label>
+    <select name="event" id="event" required>
+      <option value="">--Select--</option>
+      <option value="wedding">Wedding</option>
+      <option value="birthday">Birthday</option>
+      <option value="cultural">Cultural</option>
+      <option value="other">Other</option>
+    </select>
+
+    <button type="submit">Check Availability</button>
+  </form>
+   <footer>
+      <p>&copy; All right reserved by @The Marigold Manor </p>
+ </footer>
+</body>
+</html>

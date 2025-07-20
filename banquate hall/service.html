@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | The Marigold, Anor</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6ef;
+      padding: 0;
+      color: #333;
+    }
+
+    /* === Navbar === */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 10px 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ff9900;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 2.5rem;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    #service {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0 15px 40px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-align: center;
+      color: #555;
+    }
+
+    .image-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar a.active{
+      background-color: #e68a00;
+      color: black;
+      text-decoration: underline;
+    }
+     footer{
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin-top: 249px;
+      padding: 12px 34px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="include.html">Home</a></li>
+      <li><a href="about.html">About Hall</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="plan.html">Plans</a></li>
+      <li><a href="avebility.html">Availability</a></li>
+      <li><a href="service.html" class="active">Service</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="help.html">Help/FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Heading -->
+  <h1>Our Services</h1>
+
+  <!-- Services Grid -->
+  <div id="service">
+
+    <div class="service-item">
+      <p>Spacious outdoor parking available</p>
+      <div class="image-container">
+        <img src="parking.png" alt="Parking Area" />
+      </div>
+    </div>
+
+    <div class="service-item">
+      <p>Beautiful big garden for events</p>
+      <div class="image-container">
+        <img src="garden.png" alt="Event Garden" />
+      </div>
+    </div>
+
+    <div class="service-item">
+      <p>Spacious and well-furnished rooms</p>
+      <div class="image-container">
+        <img src="room.png" alt="Rooms" />
+      </div>
+    </div>
+    
+    <div class="service-item">
+      <p>24/7 fire and gate security</p>
+      <div class="image-container">
+        <img src="fire-security.png" alt="Fire and Gate Security" />
+      </div>
+    </div>
+
+    <div class="service-item">
+      <p>Secure entry with gate security</p>
+      <div class="image-container">
+        <img src="gate-security.png" alt="Gate Security" />
+      </div>
+    </div>
+
+  </div>
+    <footer>
+      <p>&copy; All right reserved by @The Marigold Manor </p>
+ </footer>
+</body>
+</html>
